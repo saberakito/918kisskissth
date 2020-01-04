@@ -1,0 +1,23 @@
+<div _ngcontent-qxf-c6="" class="contentBotArea">
+    <div _ngcontent-qxf-c6="" class="titleContentBot">
+        <div _ngcontent-qxf-c6="" class="titleLeft">ข่าวสาร</div>
+        <div _ngcontent-qxf-c6="" class="viewmore" routerLink="/news" tabindex="0" ng-reflect-router-link="/news">ดูเพิ่มเติม+</div>
+    </div>
+    <div _ngcontent-qxf-c6="" class="dataContentBot">
+        <div _ngcontent-qxf-c6="" class="row">
+            <!--bindings={
+  "ng-reflect-ng-for-of": "[object Object],[object Object"
+}-->
+            <ng-container *ngFor="let news of todoList; index as i; first as isFirst;let l = count">
+                <div _ngcontent-qxf-c6="" class="col-sm newsArea" tabindex="0" [routerLink]="['/news/news-detail',news.adjust_page_title+'-'+news.adjust_page_id]">
+                    <div _ngcontent-qxf-c6="" class="image-news" style="background-image: url('/upload/files/{{news.adjust_page_image_name}}.{{news.adjust_page_image_type}}');">
+                    <img style="width: 100%; height: 100%;" src="/upload/files/{{news.adjust_page_image_name}}.{{news.adjust_page_image_type}}" alt="">
+                    </div>
+                    <div _ngcontent-qxf-c6="" class="text-news" style="color:white; height: 60px; overflow: hidden;"> {{news.adjust_page_title}} </div>
+                </div>
+            </ng-container>
+
+            
+        </div>
+    </div>
+</div>

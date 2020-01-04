@@ -1,0 +1,49 @@
+<div *ngIf="showHeader"  class="{{class_checkShow}}" >
+        <div _ngcontent-cnh-c0="" class="topArea topArea_m">
+            <div _ngcontent-cnh-c0="" class="container">
+                <div _ngcontent-cnh-c0="" class="top-center">
+                    <div _ngcontent-cnh-c0="" class="logo"></div>
+                </div>
+                <div _ngcontent-cnh-c0="" class="top-center-line">
+                    <div _ngcontent-cnh-c0="" class="line-area">
+                        <div _ngcontent-cnh-c0="" class="line-text_top line-contact"> CONTACT: ติดต่อเรา </div>
+                        <div _ngcontent-cnh-c0="" class="line-icon"></div>
+                        <div _ngcontent-cnh-c0="" class="line-text_top"> Line@ : @918kisskiss </div>
+                        <div _ngcontent-cnh-c0="" class="line-text_top"> Line@ : @918kisskissv4 </div>
+                        <div _ngcontent-cnh-c0="" class="tel-icon"></div>
+                        <div _ngcontent-cnh-c0="" class="line-text_top tel-contact"> TEL : 093-218-5789 </div>
+                    </div>
+                    <div _ngcontent-cnh-c0="" class="area_login">
+                        <form _ngcontent-cnh-c0="" action="http://918kisskissth.com/api/loginUfabet.php" autocomplete="off" class="form-inline form-login ng-untouched ng-pristine ng-valid" id="form1" method="post" name="form1" novalidate="">
+                            <div _ngcontent-cnh-c0="" class="form-group">
+                                <input _ngcontent-cnh-c0="" id="ac" name="ac" type="hidden" value="loginUfabet">
+                                <input _ngcontent-cnh-c0="" class="form-control input-sm" id="username" name="username" placeholder="รหัสผู้ใช้งาน" type="text">
+                            </div>
+                            <div _ngcontent-cnh-c0="" class="form-group">
+                                <input _ngcontent-cnh-c0="" class="form-control input-sm" id="password" name="password" placeholder="รหัสผ่าน" type="password">
+                            </div>
+                            <div _ngcontent-cnh-c0="" class="form-group " style="margin-top:2px;">
+                                <a _ngcontent-cnh-c0="" class="btn btn-default btn-sm" href="javascript:__doPostBack('btnSignIn','')" id="btnLogin"><img _ngcontent-cnh-c0="" class="login_btn" src="assets/images/header/login.png"></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <app-navbar *ngIf="showHeader"></app-navbar>
+
+
+</div>
+<div class="content page">
+    <router-outlet></router-outlet>
+</div>
+
+<!-- <div class="m_footer col-xs-12">
+    <div class="col-xs-3" routerLink="/home"><img src="assets/images/footer/icon-home.png"></div>
+    <div class="col-xs-3" ><a href="http://line.me/ti/p/~@vwin168" target="_bank"><img src="assets/images/footer/icon-line.png"></a></div>
+    <div class="col-xs-3" routerLink="/promotion"><img src="assets/images/footer/icon_guide.png"></div>
+    <div class="col-xs-3" routerLink="/page/register" ><img src="assets/images/footer/icon_add.png"></div>
+</div> -->
+    <app-footer *ngIf="showHeader"></app-footer>
+

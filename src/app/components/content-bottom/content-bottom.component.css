@@ -1,0 +1,78 @@
+.contentBotArea{
+    float: left;
+    width: 100%;
+}
+.titleContentBot{
+    background: #D10000;
+    color: white;
+    padding: 10px;
+    margin-top:10px;
+    float: left;
+    width: 100%;
+}
+.titleLeft{
+    float: left;
+    color: white;
+    font-size: 1.6em;
+
+}
+.viewmore{
+    float: right;
+    margin-top:6px;
+    color:#E8CF01;
+}
+.viewmore:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.dataContentBot{
+    /* min-height: 500px; */
+    float: left;
+    width: 100%;
+}
+
+.bootCols{
+    height:100px;
+    margin:0;
+    box-sizing:border-box;
+    padding:5px;
+    border:2px solid black;
+    background-color:red;
+  }
+  .row{
+      margin-left:0px;
+      margin-right: 0px;
+  }
+  .newsArea{
+      height: auto;
+      margin-top: 10px;
+      border: 2px solid red;
+      padding: 0px;
+      min-height: 300px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      
+  }
+  .newsArea:first-child{
+      margin-left:0px;
+  }
+
+  .image-news{
+      height: calc( 100% - 70px );
+      background-size: cover;
+      background-position: center;
+  }
+  .text-news{
+      padding:10px;
+      border-top:1px solid red;
+      color:white;
+      min-height: 50px;
+      height: 60px; overflow: hidden;
+  }
+
+@media screen and (min-width: 1200px) {
+
+    .newsArea{
+        margin-left:15px;
+    }
+}

@@ -1,0 +1,139 @@
+.area_login{
+    display: none;
+}
+#form3{
+    height: 35px;
+    float: left;
+    width: 100%;
+}
+/* .area_login2{
+    float: left;
+    position: relative;
+    margin-top:15px;
+    margin-bottom:15px;
+    margin-left:15px;
+    height: 40px;
+} */
+
+.area_login2{
+    float: left;
+    position: absolute;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    margin-left: 162px;
+    height: 40px;
+    z-index: 9;
+}
+
+.form-inline .form-control {
+    display: inline-block;
+    margin-right: 0px;
+    width: 128px;
+    height: 25px;
+    margin-left: 10px;
+    vertical-align: middle;
+}
+.login_btn{
+    width: 80px;
+}
+.btn-group-sm>.btn, .btn-sm {
+    margin-right: 10px;
+}
+/* .top-center {
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 225px;
+    height: 80px;
+    display: block;
+    position: unset;
+    margin: 0 auto;
+    z-index: 1;
+    margin-top: 5px;
+    background-size: 300px 110px;
+    float: unset;
+} */
+.top-center {
+    background-position: center;
+    background-repeat: no-repeat;
+    /* width: 225px; */
+    height: 80px;
+    display: block;
+    position: unset;
+    margin: 0 auto;
+    z-index: 1;
+    margin-top: 5px;
+    background-size: 300px 110px;
+    float: unset;
+}
+.top-center-line{
+    position: relative;
+    width: 100%;
+    top: -82px;
+    display: none;
+}
+
+@media screen and (min-width: 400px) {
+    .area_login2{
+        margin-top: 35px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .area_login2{
+        height: unset;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .area_login2{
+        margin-top: 80px;
+        right: 0;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    
+    
+    .area_login{
+        float: left;
+        position: relative;
+        width: 450px;
+        margin-top: 38px;
+        margin-left: -220px;
+        display: block;
+    }
+}
+
+
+
+@media screen and (min-width: 1100px) {
+    .area_login2{
+        display: none;
+    }
+    .top-center {
+        width: 225px;
+    }
+    .area_login{
+        float: right;
+        position: relative;
+        width: 480px;
+        margin-top: 38px;
+        margin-left: -120px;
+        display: block;
+    }
+    .form-login{
+        float: right;
+    }
+    .form-inline .form-control {
+        width: 170px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .top-center {
+        display: block;
+    }
+    .top-center-line{
+        display: block;
+    }
+}
+

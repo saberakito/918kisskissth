@@ -1,0 +1,18 @@
+
+
+    <div  class="titleImage"> โปรโมชั่น</div>
+    <div class="container">
+        <div  class="contentPageArea ">
+              <ng-container *ngFor="let promotion of todoPromotionText; index as i; first as isFirst;let l = count">
+                      <div routerLink="/promotion/promotion-detail/{{promotion.adjust_page_id}}"  class="col-md-12 hvr-push" style="margin-bottom:15px;padding:25px;">
+                              <div  class="titlePromotion">{{promotion.adjust_page_title}}</div>
+                                 <div  class="detailLeft">
+                                     <img *ngIf="promotion.adjust_page_image_name!=null&&promotion.adjust_page_image_name!=''" class="attachment-alpha-store-carousel size-alpha-store-carousel wp-post-image" draggable="false" style="width: 100%;" src="/upload/files/{{promotion.adjust_page_image_name}}.{{promotion.adjust_page_image_type}}">
+                                 </div>
+                                 <div  class="titlePromotion" style="margin-top:15px;" [innerHTML]="promotion.adjust_page_description | sanitizeHtml">
+                                  
+                                 </div>
+                             </div>
+              </ng-container>
+        </div>
+    </div>
